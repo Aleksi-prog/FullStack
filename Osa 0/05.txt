@@ -1,0 +1,33 @@
+selain->palvelin
+HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+
+palvelin->selain
+html-tiedosto, jonka perusteella seuraavaa gettiä kohti
+
+selain->palvelin
+HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+tyylitiedoston haku
+
+palvelin->selain
+lähettää tyylitiedoston
+
+selain->palvelin
+HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+spa.js:n haku
+
+palvelin->selain
+spa.js:n lähetys
+
+spa.js:n koodi suorittaa seuraavan json-datan haun:
+selain->palvelin
+HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+palvelin->selain
+data.json lähetys
+json hakee listan sisällön
+
+selain->palvelin
+HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+
+palvelin->selain
+ikonin lähetys

@@ -1,0 +1,9 @@
+selain->palvelin
+HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+selain->palvelin
+HTTP GET /exampleapp/notes
+
+palvelin->selain
+HTTP POST /exampleapp/new_note
+Tähän lähtee mukaan lomakkeen sisältämä data
